@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 #root {
-  @apply bg-gray-800 text-white h-screen flex flex-col items-center gap-6 p-10;
+  @apply bg-gray-800 text-white w-screen h-screen flex flex-col items-center;
 }

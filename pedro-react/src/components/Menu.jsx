@@ -5,8 +5,8 @@ export default function Menu() {
   const { gameState, setGameState, userName, setUserName } =
     useContext(GameStateContext);
   return (
-    <div className="bg-gray-300 w-1/2 min-w-96 h-2/3 rounded-lg p-6 flex flex-col justify-center items-center gap-4">
-      <label className="text-black text-2xl">Enter your name: </label>
+    <div className="flex flex-col justify-center items-center gap-4">
+      <label className="text-2xl">Enter your name: </label>
       <input
         onChange={(e) => {
           setUserName(e.target.value);
@@ -19,7 +19,7 @@ export default function Menu() {
         onClick={() => {
           setGameState("playing");
         }}
-        className="bg-gray-800 py-2 px-8 rounded-lg  hover:bg-gray-700"
+        className="bg-amber-600 w-2/4 py-2 rounded-lg shadow-lg hover:bg-amber-400 hover:text-black"
       >
         Start Quiz
       </button>

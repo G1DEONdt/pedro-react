@@ -34,8 +34,8 @@ export default function Todo() {
   };
 
   return (
-    <>
-      <h1 className="text-4xl">Todo List</h1>
+    <div className="w-full h-full flex flex-col p-12 gap-6 items-center">
+      <h1 className="text-4xl text-center">Todo List</h1>
       <div>
         <input
           ref={inputTask}
@@ -91,6 +91,6 @@ export default function Todo() {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 }
